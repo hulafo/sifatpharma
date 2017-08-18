@@ -1,0 +1,29 @@
+.myst{
+	background:#FF0080;
+
+}
+.navbar-default.navbar-nav>li>a{
+	background: #FF0080;
+	color:#ffffff;
+}
+.navbar-default.navbar-nav>li>a:hover{
+	color:#FF0080;
+}
+.navbar-default.navbar-nav>.active>a,
+.navbar-default.navbar-nav>.active>a:hover,
+.navbar-default.navbar-nav>.active>a:focus{
+	background:#fff;
+	color:#FF0080;
+}
+.navbar-default.navbar-brand{
+	background: #FF0080;
+	color:#fff;
+}
+.btn.btn-default:hover{
+	background:#FF0080;
+	color: #fff; 
+}
+.navbar-nav > li > .dropdown-menu>li>a { color: #FF0080; }
+.navbar-default.navbar-nav>li>a.myLng {
+    padding:0;
+}
