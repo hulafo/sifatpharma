@@ -1,0 +1,19 @@
+{% extends "pharma/navbar.html" %}
+ {% block content %}
+  
+	{% for post in object_list %}
+	 <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="">{{post.title}} </h2>
+          
+          <p class="lead">{{ post.shortbd|safe|truncatechars:500 }}</p>
+          <p><a class="btn btn-default" href="/post/{{post.id}}"" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="pull-right img-thumbnail text-center"   src="{{post.image.url }}" width="500px"  height="500px" alt="Generic placeholder image">
+          
+        </div>
+     </div>
+     <hr class="featurette-divider">
+	{% endfor%}     
+ {% endblock %}

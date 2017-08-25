@@ -1,1 +1,17 @@
 {% extends "pharma/header.html" %}
+{% include 'blog/post_snippet.html' with truncated=True %}
+{% load static %}
+ {% block content %}
+   {% for post in post %}
+	     
+	     
+		<div class="col-lg-4">
+          <img class="img-circle" src="{{post.image.url }}" alt="Generic placeholder image" width="140" height="140">
+          <h4>{{post.title|truncatechars:50}}</h4>
+        
+          <p><a class="btn btn-default" href="/post/{{post.id}}"" role="button">Далее &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+	{% endfor %}
+  
+	
+ {% endblock %}

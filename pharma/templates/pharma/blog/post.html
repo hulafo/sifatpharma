@@ -1,0 +1,10 @@
+{% extends "pharma/navbar.html" %}
+{% block content %}
+	<h3>{{post.title}}</h3>
+	
+	      <img src="{{post.image.url }}" class="img-responsive">
+	      
+	<h6>on {{post.date}}</h6>
+	{{post.body|safe|linebreaks}}
+	
+{% endblock %}
