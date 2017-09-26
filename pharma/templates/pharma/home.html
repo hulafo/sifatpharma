@@ -4,13 +4,23 @@
  {% block content %}
    {% for post in post %}
 	     
-	     
-		<div class="col-lg-4">
-          <img class="img-circle" src="{{post.image.url }}" alt="Generic placeholder image" width="140" height="140">
-          <h4>{{post.title|truncatechars:50}}</h4>
-        
-          <p><a class="btn btn-default" href="/post/{{post.id}}"" role="button">Далее &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+	     <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-nineteen-bottom">
+                        <!-- blog image -->
+                        <div class="post-thumbnail overflow-hidden margin-twelve-bottom">
+                            <a href="#"><img src="{{post.image.url }}" data-img-size="(W)800px X (H)507px" alt=""/></a>
+                        </div>
+                        <!-- end blog image -->
+                        <!-- blog details -->
+                        <div class="post-details no-margin-lr no-margin-bottom">
+                            
+                            <a href="/post/{{post.id}}" class="tz-text text-dark-gray text-medium font-weight-500 alt-font display-block margin-four-bottom md-text-medium">{{post.title|truncatechars:50}}</a>
+                            <div class="text-medium tz-text"><p>{{post.shortbd|truncatechars:150|safe}}</p></div>
+                            <div class="separator-line-full bg-middle-gray margin-ten-bottom tz-background-color"></div>
+                            <div class="text-extra-small alt-font"><a href="#" class="tz-text text-medium-gray">15 SEPTEMBER 2016</a>   /   <span class="tz-text">POSTED BY</span> <a href="#" class="tz-text text-medium-gray">NATHEN FORD</a></div>
+                        </div>
+                        <!-- end blog details -->
+                    </div>
+		
 	{% endfor %}
   
 	

@@ -1,253 +1,545 @@
 {% load static %}
-<!DOCTYPE html>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    
-    {% load staticfiles %}
-    <script src="{% static 'pharma/js/bootstrap.min.js'%}"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Carousel Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{% static 'pharma/css/bootstrap.min.css' %}" type = "text/css"/>
-   
-    <link href="{% static 'pharma/css/mystyle.css'%}" rel="stylesheet">
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{% static 'pharma/css/ie10-viewport-bug-workaround.css'%}" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="{% static 'pharma/js/ie8-responsive-file-warning.js'%}"></script><![endif]-->
-    <script src="{% static 'pharma/js/ie-emulation-modes-warning.js'%}"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="{% static 'pharma/css/carousel.css'%}" rel="stylesheet">
-    <script>
-// Load this when the DOM is ready
-
-</script>
-
-
-<style>.carousel-inner > .item > img { width:100%; height:590px; } </style>
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top myst ">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-default navbar-brand" href="#">SIFAT-PHARMA</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-default">
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#service">Cервис</a></li>
-                <li><a href="/blog">Блог</a></li>
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Продукты <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-                <li><a href="/contact">Контакты</a></li>
-                <li><a href="/about">О нас</a></li>
-              
-                <li class="btn-group"> <a class=" btn-primary dropdown-toggle" data-toggle="dropdown" href="#">RU <span class="caret"></span></a>
-
-				    <ul class="dropdown-menu">
-				        <li><a href="/pharma_en">EN</a>
-				
-				        </li>
-				        <li><a href="#">RU</a>
-				
-				        </li>
-				        <li><a href="/pharma_tj">TJ</a>
-				
-				        </li>
-				    </ul>
-				</li>
-				<div id="Menu"></div>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-         <img class="first-slide" src="{% static 'pharma/img/sifat-brandbook-007.jpg' %}" alt="First slide"> 
-          <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <!--  <img class="first-slide" src="{% static 'pharma/img/1.jpg' %}" alt="First slide"> -->
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="{% static 'pharma/img/sifat-brandbook-018.jpg' %}" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="{% static 'pharma/img/sifat-brandbook-012.jpg' %}" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="{% static 'pharma/img/sifat-brandbook-002.jpg' %}" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-       {% block content %}
-      
-       {% endblock %}
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <!-- title -->
+        <title>СифатФарма</title>
+        <meta name="description" content="LeadGen is a conversion ratio and speed optimized multi-purpose marketing landing page template with drag & drop page builder and tons of readymade elements and demos with greater level of customization possibilities." />
+        <meta name="keywords" content="Marketing, landing page, creative, html5, css3, page builder, drag & drop, multi-purpose, one page, aweber, mailchimp, active campaign, campaign monitor, get response, mailer lite, custom form, product, hotel and resort, resume, personal, restaurant, corporate business, interior design, software, spa salon, travel agency, app landing page, design agency, start-up, e-learning, sports and gym, seo, wedding invitation, hosting, online shopping, yoga and fitness, music show, finance and account, e-book, event, medical, real estate, portfolio, digital marketing, inner content page, sign-up, 404 not found, coming soon" />
+        <meta name="author" content="lgauthor">
         
-       
+       <!-- favicon <link rel="shortcut icon" href="{% static 'pharma/images/icon/favicon.png'%}"> -->
+        <!-- animation -->
+        <link rel="stylesheet" href="{% static 'pharma/css/animate.css'%}" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="{% static 'pharma/css/bootstrap.min.css'%}" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="{% static 'pharma/css/font-awesome.min.css'%}" />
+        <!-- themify-icons -->
+        <link rel="stylesheet" href="{% static 'pharma/css/themify-icons.css' %}" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="{% static 'pharma/css/owl.transitions.css' %}" />
+        <link rel="stylesheet" href="{% static 'pharma/css/owl.carousel.css' %}" /> 
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="{% static 'pharma/css/magnific-popup.css' %}" /> 
+        <!-- base -->
+        <link rel="stylesheet" href="{% static 'pharma/css/base.css' %}" /> 
+        <!-- elements -->
+        <link rel="stylesheet" href="{% static 'pharma/css/elements.css' %}" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="{% static 'pharma/css/responsive.css' %}" />
+        <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="{% static 'pharma/css/ie.css' %}" />
+        <![endif]-->
+        <!--[if IE]>
+            <script src="{% static 'pharma/js/html5shiv.min.js' %}"></script>
+        <![endif]-->
+        <style>
+            .tab-style4 li::before { color: #3966e6;}
+        </style>
+    </head>
+    <body>
+        <header class="header-style4" id="header-section9">
+            <!-- nav -->
+            <nav class="navbar bg-white white-header alt-font no-margin no-padding shrink-medium-header light-header">
+                <div class="header-top bg-light-gray tz-header-bg">
+                
+                    <div class="container">
+                        <div class="row">
+                        
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!--  <div class="mail">GET SUPPORT: <a href="mailto:no-reply@domain.com" class="text-light-gray tz-text">NO-REPLY@DOMAIN.COM</a></div>-->
+                                <!-- social elements -->
+                                <div class="social float-right">
+                                    <a href="#"><i class="fa fa-facebook tz-icon-color"></i></a>
+                                    <a href="#"><i class="fa fa-twitter tz-icon-color"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus tz-icon-color"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin tz-icon-color"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest tz-icon-color"></i></a>
+                                </div>
+                                <!-- end social elements -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom bg-fuzin tz-header-bg bb">
+                    <div class="container navigation-menu">
+                   
+                        <div class="row">
+                            <!-- logo -->
+                            <div class="col-md-3 col-sm-4 col-xs-9">
+                                <h2 class=""><a href="#home" class="inner-link text-white"><img alt="" src="images/logo.png" data-img-size="(W)163px X (H)39px">Сифат Фарма</a></h2>
+                            </div>
+                            <!-- end logo -->
+                            <div class="col-md-9 col-sm-8 col-xs-3 position-inherit">
+                                <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pull-right">
+                                    <ul class="nav navbar-nav font-weight-500">
+                                        <li class="propClone"><a class="inner-link" href="#content-section16">О НАС</a></li>
+                                        <li class="propClone"><a class="inner-link" href="#feature-section7">СЕРВИСЫ</a></li>
+                                        <li class="propClone"><a class="inner-link" href="#tab-section3">АПТЕКИ</a></li>
+                                        <!-- <li class="propClone"><a class="inner-link" href="#team-section1">MEDICAL TEAM</a></li> -->
+                                        <li class="propClone"><a class="inner-link" href="#blog-section3">АКТУАЛЬНЫЕ НОВОСТИ</a></li>
+                                        <li class="propClone"><a class="inner-link" href="#contact-section13">СВЯЗАТЬСЯ С НАМИ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav> 
+            <!-- end nav -->
+        </header>
+        <section class="position-relative cover-background tz-builder-bg-image border-none xs-padding-60px-tb hero-style2 bg-img-one" id="home" data-img-size="(W)1920px X (H)800px" style="background: linear-gradient(rgba(4, 94, 229, 0), rgba(8, 32, 60, 0)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/sifat-brandbook-007.jpg'%}) repeat scroll 0% 0%;">
+            <div class="container one-third-screen position-relative">
+                <div class="row">
+                    <div class="slider-typography text-center xs-position-static">
+                        <div class="slider-text-middle-main">
+                            <div class="slider-text-middle equalize xs-equalize-auto">
+                                <!-- slider text -->
+                                <div class="col-md-6 col-sm-7 col-xs-12 text-left xs-text-center display-table">
 
+                                </div>
+                                <!-- end slider text -->
+                                <!-- contact form -->
+                               <!--   <div class="col-md-5 col-sm-5 col-xs-12 col-md-offset-1 position-relative xs-margin-thirteen-bottom display-table">
+                                    <div class="display-table-cell-vertical-middle">
+                                        <div class="bg-black-medium-rgba tz-background-color padding-seventeen border-radius-6 text-center xs-padding-thirteen">
+                                            <h6 class="alt-font margin-twenty-bottom font-weight-600 tz-text title-medium text-white">MAKE AN APPOINTMENT</h6>
+                                            <form action="javascript:void(0)" method="post">
+                                                <input type="text" name="name" id="name" data-email="required" placeholder="*Your Name" class="medium-input border-radius-4">
+                                                <input type="text" name="email" id="email" data-email="required" placeholder="*Your Email" class="medium-input border-radius-4">
+                                                <input type="text" name="phone" id="phone" placeholder="Your Phone" class="medium-input border-radius-4">
+                                                <textarea name="comment" id="comment" placeholder="Your Message" class="medium-input border-radius-4"></textarea>
+                                                <button type="submit" class="default-submit btn btn-large propClone bg-light-green text-black display-block width-100">SEND MESSAGE</button>                                                
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!-- end contact form -->
+                            </div>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="padding-110px-tb xs-padding-60px-tb bg-white builder-bg border-none" id="content-section16">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">Добро пожаловать в ООО «СИФАТ ФАРМА»</h2>
+                        <div class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom text-dark-gray xs-margin-nineteen-bottom">ООО «СИФАТ ФАРМА» является коммерческой организацией, созданной в организационно – правовой форме общество с ограниченной ответственностью в соответствие с действующим законодательством Республики Таджикистан.  ООО «СИФАТ ФАРМА»– молодая и перспективная компания на фармацевтический рынке Таджикистана. Компания создана в 2017 году. 
+          Основное направление деятельности – реализация качественный товар, лекарственных средств, изделий медицинского назначения и пара фармацевтической продукции аптекам, лечебным учреждениям и населению. 
+         Стратегией компании является повышение качества жизни и здоровья населения в республике путем обеспечения лечебных учреждений современным медицинским оборудованием, а населении качественными медикаментами.</div>
+                    </div>
+                    <!-- end section title -->
+                    <!-- content details -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 equalize no-padding">                            
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding xs-no-padding-15 bg-gray tz-builder-bg-image xs-height-350-px cover-background bg-img-two" data-img-size="(W)800px X (H)600px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/sifat-brandbook-002.jpg'%}) repeat scroll 0% 0%;"></div>                            
+                        <div class="col-md-6 col-sm-6 col-xs-12 bg-light-green no-padding display-table tz-background-color">
+                            <div class="display-table-cell-vertical-middle padding-thirty sm-padding-sixteen">
+                                <h2 class="text-white title-large font-weight-400 sm-title-large margin-ten-bottom tz-text">Компания «СИФАТ ФАРМА» планирует стать ведущим национальным   </h2>
+                                <div class="title-small text-white sm-title-small font-weight-100 tz-text margin-twelve-bottom">дистрибьютором фармацевтической компании в Таджикистане,развивая сотрудничество с зарубежными и отечественными производителями медицинских препаратов, поставщиками и розничными участниками рынка лекарственных средств.</div>
+                                <div class="text-medium text-white sm-text-medium tz-text"> Организации тесно сотрудничает с организациями Российской федерации, Индии, Ираном, Украиной и республики Беларусь.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end content details -->
+                </div>
+            </div>
+        </section>
+        <section class="padding-110px-tb feature-style4 bg-light-gray border-none builder-bg xs-padding-60px-tb" id="feature-section7">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">Наша преимущество</h2>
+                        <div class="text-extra-large width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom xs-margin-nineteen-bottom">Мы стремимся к технологическому лидерству в области поставок современного медицинского и косметологического оборудования, а также фармацевтической продукции.</div>
+                    </div>
+                    <!-- end section title -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 four-column">
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-nineteen-bottom">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="images/restaurant-service-icon01.png" data-img-size="(W)90px X (H)90px"></div>
+                            <h3 class="text-large text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text">
+                            </h3>
+                            
+                           
+                            <div class="text-large tz-text"> <p> Компания «СИФАТ ФАРМА» - это целеустремленный коллектив, который стремится на высокое качество лечения людей.</p> </div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center sm-margin-nine-bottom xs-margin-nineteen-bottom">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="images/restaurant-service-icon02.png" data-img-size="(W)90px X (H)90px"></div>
+                            <h3 class="text-large text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text"></h3>
+                            <div class="text-large tz-text"> <p>В компании сформирована профессиональная команда руководителей и специалистов из различных областей – фармацевтики, ритейла, банковского сектора, имеющий глубокие знания в сфере своей деятельности и солидный управленческий опыт.
+                            </p>
+</p> </div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center xs-margin-nine-bottom xs-margin-nineteen-bottom">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="images/restaurant-service-icon03.png" data-img-size="(W)90px X (H)90px"></div>
+                            <h3 class="text-medium text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text"></h3>
+                            <div class="text-large tz-text"> <p> Компания тесно сотрудничает с крупными фармацевтическими  компаними Российской федерации, Индии, Иран, Украина и республики Беларусь. 
+</p> </div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                            <div class="margin-nineteen-bottom sm-margin-thirteen-bottom xs-margin-nine-bottom"><img alt="" src="images/restaurant-service-icon04.png" data-img-size="(W)90px X (H)90px"></div>
+                            <h3 class="text-medium text-dark-gray alt-font margin-three-bottom display-block sm-margin-nine-bottom xs-margin-five-bottom tz-text"></h3>
+                            <div class="text-large tz-text"> <p> Компания «СИФАТ ФАРМА» - это целеустремленный коллектив, который стремится на высокое качество лечения людей. </p> </div>
+                        </div>
+                        <!-- end feature box -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="padding-110px-tb bg-white builder-bg xs-padding-60px-tb" id="tab-section3">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">НАШИ АПТЕКИ</h2>
+                        <div class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom xs-margin-nineteen-bottom">Компания «СИФАТ ФАРМА» располагает сетью аптек на всех регионах Республики, современными складскими помещениями, обеспечивающим оптимальные условия хранения медицинских препаратов и своевременную отгрузку продукции.</div>
+                    </div>
+                    <!-- section title -->                    
+                    <div class="tab-style5 text-center col-md-12 col-sm-12 col-xs-12">
+                        <!-- tab navigation -->
+                        <ul class="nav nav-tabs alt-font xs-width-100">
+                            <li class="active xs-width-100"><a href="#tab5_sec1" data-toggle="tab" class="xs-width-100"><span class="tz-text font-weight-500">Аптека №1</span></a></li>
+                            <li class="xs-width-100"><a href="#tab5_sec2" data-toggle="tab" class="xs-width-100"><span class="tz-text font-weight-500">Аптека №2, МТ Истиклол</span></a></li>
+                            <li class="xs-width-100"><a href="#tab5_sec3" data-toggle="tab" class="xs-width-100"><span class="tz-text font-weight-500">Аптека №3</span></a></li>
+                            <li class="xs-width-100"><a href="#tab5_sec4" data-toggle="tab" class="xs-width-100"><span class="tz-text font-weight-500">Аптека №4</span></a></li>
+                            
+                            <li class="xs-width-100"><a href="#tab5_sec5" data-toggle="tab" class="xs-width-100"><span class="tz-text font-weight-800">Аптека №5 </span></a></li>
+                            
+                          
+                        </ul>
+                        <!-- tab end navigation -->
+                        <!-- tab content section -->
+                        <div class="tab-content">
+                            <!-- tab content -->
+                            <div id="tab5_sec1" class="text-center center-col tab-pane active"> 
+                                <div class="tab-pane"> 
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tab-style5-content bg-deep-blue padding-seven xs-padding-thirteen xs-padding-twenty-three-top xs-padding-twenty-three-bottom text-left tz-background-color">
+                                        <h3 class="text-white text-transform-none font-weight-300 margin-twenty-bottom sm-margin-five-bottom xs-margin-fifteen-bottom tz-text">Наша сеть будет работать на качественное удовлетворение всех потребности клиентов 
+                                        </h3>
+                                        <div class="text-white text-medium font-weight-300 margin-twenty-three-bottom sm-margin-five-bottom xs-margin-fifteen-bottom display-block tz-text"><p></p></div>
+                                        <!-- <a href="#home" class="btn btn-medium propClone btn-circle bg-white text-deep-blue"><span class="tz-text">GET APPOINTMENT</span><i class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a> -->
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 no-padding cover-background position-relative tab-style5-img tz-builder-bg-image bg-img-three" data-img-size="(W)1000px X (H)800px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/1.jpg'%}) repeat scroll 0% 0%;"></div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- tab content -->
+                            <div id="tab5_sec2" class="text-center center-col tab-pane"> 
+                                <div class="tab-pane"> 
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tab-style5-content bg-deep-blue padding-seven xs-padding-thirteen xs-padding-twenty-three-top xs-padding-twenty-three-bottom text-left builder-bg">
+                                        <h3 class="text-white text-transform-none font-weight-300 margin-twenty-bottom sm-margin-five-bottom xs-margin-fifteen-bottom tz-text">«СИФАТ ФАРМА» – молодая и перспективная компания, oснованная в 2017 году</h3>
+                                        <div class="text-white text-medium font-weight-300 margin-twenty-three-bottom sm-margin-five-bottom xs-margin-fifteen-bottom display-block tz-text"><p></p></div>
+                                        <!-- <a href="#home" class="btn btn-medium propClone btn-circle bg-white text-deep-blue"><span class="tz-text">GET APPOINTMENT</span><i class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a> -->
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 no-padding cover-background position-relative tab-style5-img tz-builder-bg-image bg-img-four" data-img-size="(W)1200px X (H)760px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/2.jpg'%}) repeat scroll 0% 0%;"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- end tab content -->
+                            <!-- tab content -->
+                            <div id="tab5_sec3" class="text-center center-col tab-pane"> 
+                                <div class="tab-pane"> 
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tab-style5-content bg-deep-blue padding-seven xs-padding-thirteen xs-padding-twenty-three-top xs-padding-twenty-three-bottom text-left builder-bg">
+                                        <h3 class="text-white text-transform-none font-weight-300 margin-twenty-bottom sm-margin-five-bottom xs-margin-fifteen-bottom tz-text">Компания «СИФАТ ФАРМА» располагает сетью аптек на всех регионах Республики, 
+</h3>
+                                         <div class="text-white text-medium font-weight-300 margin-twenty-three-bottom sm-margin-five-bottom xs-margin-fifteen-bottom display-block tz-text"><p>современными складскими помещениями, обеспечивающим оптимальные условия хранения медицинских препаратов и своевременную отгрузку продукции. </p></div>
+                                       <!-- <a href="#home" class="btn btn-medium propClone btn-circle bg-white text-deep-blue"><span class="tz-text">GET APPOINTMENT</span><i class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a> -->
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 no-padding cover-background position-relative tab-style5-img tz-builder-bg-image bg-img-five" data-img-size="(W)800px X (H)640px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/3.jpg'%}) repeat scroll 0% 0%;"></div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                            <!-- tab content -->
+                            
+                            <!-- end tab content -->
+                            <div id="tab5_sec5" class="text-center center-col tab-pane"> 
+                                <div class="tab-pane"> 
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tab-style5-content bg-deep-blue padding-seven xs-padding-thirteen xs-padding-twenty-three-top xs-padding-twenty-three-bottom text-left builder-bg">
+                                        <h3 class="text-white text-transform-none font-weight-300 margin-twenty-bottom sm-margin-five-bottom xs-margin-fifteen-bottom tz-text">Компания «СИФАТ ФАРМА» - это целеустремленный коллектив, который стремится на высокое качество лечения людей. 
+</h3>
+                                        <div class="text-white text-medium font-weight-300 margin-twenty-three-bottom sm-margin-five-bottom xs-margin-fifteen-bottom display-block tz-text"><p></p></div>
+                                         <!-- <a href="#home" class="btn btn-medium propClone btn-circle bg-white text-deep-blue"><span class="tz-text">GET APPOINTMENT</span><i class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a> -->
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 no-padding cover-background position-relative tab-style5-img tz-builder-bg-image bg-img-four" data-img-size="(W)1200px X (H)760px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/2.jpg'%}) repeat scroll 0% 0%;"></div>
+                                </div>
+                            </div>
+                            <div id="tab5_sec4" class="text-center center-col tab-pane"> 
+                                <div class="tab-pane"> 
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 tab-style5-content bg-deep-blue padding-seven xs-padding-thirteen xs-padding-twenty-three-top xs-padding-twenty-three-bottom text-left builder-bg">
+                                        <h3 class="text-white text-transform-none font-weight-300 margin-twenty-bottom sm-margin-five-bottom xs-margin-fifteen-bottom tz-text">Мы стремимся к технологическому лидерству в области поставок современного медицинского и косметологического оборудования,</h3>
+                                        <div class="text-white text-medium font-weight-300 margin-twenty-three-bottom sm-margin-five-bottom xs-margin-fifteen-bottom display-block tz-text"><p> а также фармацевтической продукции
+                                        </p></div>
+                                       <!--  <a href="#home" class="btn btn-medium propClone btn-circle bg-white text-deep-blue"><span class="tz-text">GET APPOINTMENT</span><i class="fa fa-angle-right icon-extra-small tz-icon-color"></i></a>-->
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 no-padding cover-background position-relative tab-style5-img tz-builder-bg-image bg-img-four" data-img-size="(W)1200px X (H)760px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)) repeat scroll 0% 0%, transparent url({% static 'pharma/images/2.jpg'%}) repeat scroll 0% 0%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end tab content section -->
+                    </div>                    
+                </div>
+            </div>
+        </section>
+     
+           
+        <section class="padding-110px-tb xs-padding-60px-tb bg-white builder-bg blog-style2" id="blog-section3">
+            <div class="container">
+                <!-- section title -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">АКТУАЛЬНЫЕ НОВОСТИ</h2>
+                        <div class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom  xs-margin-nineteen-bottom"></div>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <div class="row">
+                    <!-- blog item -->
+                    {% block content %}
+                    {% endblock %}
+                    
+                    <!-- end blog item -->
+                </div>
+            </div>
+        </section>
+        <section id="clients-section2" class="padding-110px-tb bg-light-gray builder-bg clients-section2 xs-padding-top-60px">
+            <div class="container">
+                <div class="row">
+                    <!-- clients logo -->
+                    <div class="owl-slider-style4 owl-carousel owl-theme owl-no-pagination owl-dark-pagination outside-arrow-simple black-pagination sm-no-owl-buttons sm-show-pagination owl-pagination-bottom">
+                        <!-- client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-1.png'%}" id="tz-bg-149" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- end client logo image -->
+                        <!-- client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-2.png'%}" id="tz-bg-150" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- client logo image -->
+                        <!-- end client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-3.png'%}" id="tz-bg-151" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- client logo image -->
+                        <!-- end client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-4.png'%}" id="tz-bg-152" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- client logo image -->
+                        <!-- end client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-5.png'%}" id="tz-bg-153" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- client logo image -->
+                        <!-- end client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-6.png'%}" id="tz-bg-154" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- client logo image -->
+                        <!-- end client logo image -->
+                        <div class="item">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="client-logo-outer">
+                                    <div class="client-logo-inner">
+                                        <a href="#">
+                                            <img src="{% static 'pharma/images/clients-7.png'%}" id="tz-bg-155" data-img-size="(W)800px X (H)500px" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <!-- end client logo image -->
+                    </div>
+                    <!-- end clients logo -->
+                </div>
+            </div>
+        </section>
+        <section class="padding-110px-tb no-padding-bottom bg-white builder-bg xs-padding-60px-tb xs-no-padding-bottom" id="contact-section13">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">СВЯЗАТЬСЯ С НАМИ</h2>
+                        <div class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom xs-margin-nineteen-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    </div>
+                    <!-- end section title -->
+                    <!-- contact detail -->
+                    <div class="col-md-10 col-sm-12 col-xs-12 no-padding margin-ten-bottom clear-both display-table center-col">
+                        <!-- feature box -->
+                        <div class="col-md-4 col-sm-4 col-xs-12 sm-margin-nine-bottom xs-margin-thirteen-bottom text-center sm-clear-both">
+                            <div class="feature-box xs-margin-thirteen xs-no-margin-tb">     
+                                <i class="fa ti-location-pin text-light-green icon-large tz-icon-color margin-ten-bottom xs-margin-three-bottom"></i>
+                                <div class="feature-text text-medium center-col tz-text">301 The Greenhouse, Custard,<br>Factory, London, E2 8DY.</div>
+                            </div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-4 col-sm-4 col-xs-12 sm-margin-nine-bottom xs-margin-thirteen-bottom text-center">
+                            <div class="feature-box xs-margin-thirteen xs-no-margin-tb">
+                                <i class="fa ti-mobile text-light-green icon-large tz-icon-color margin-ten-bottom xs-margin-three-bottom"></i>
+                                <div class="feature-text text-medium center-col tz-text">+992 44-601-03-07</div>
+                            </div>
+                        </div>
+                        <!-- end feature box -->
+                        <!-- feature box -->
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-center xs-no-margin-bottom">
+                            <div class="feature-box xs-margin-thirteen xs-no-margin-tb">
+                                <i class="fa ti-email text-light-green icon-large tz-icon-color margin-ten-bottom xs-margin-three-bottom"></i>
+                                <div class="feature-text text-medium center-col"><a class="tz-text" href="mailto:no-reply@domain.com">info@sifatpharma.tj</a></div>
+                            </div>
+                        </div>
+                        <!-- end feature box -->
+                    </div>
+                    <!-- end contact detail -->                            
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 no-padding xs-margin-nineteen-top">
+                        <iframe height="400" allowfullscreen="" style="border: 0; width: 100%; vertical-align: bottom; display: block; pointer-events: none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8351288872545!2d144.9556518!3d-37.8173306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1441274464692"></iframe>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <footer id="footer-section6" class="bg-white padding-60px-tb xs-padding-40px-tb builder-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-five-bottom padding-five-bottom border-bottom-medium-dark tz-border">
+                        <ul class=" display-inline alt-font">
+                            <li class="propClone display-inline margin-ten-right"><a class="inner-link tz-text" href="#content-section16">О НАС</a></li>
+                            <li class="propClone display-inline margin-ten-right"><a class="inner-link tz-text" href="#feature-section7">СЕРВИСЫ</a></li>
+                            <li class="propClone display-inline margin-ten-right"><a class="inner-link tz-text" href="#tab-section3">АПТЕКИ</a></li>
+                            <!--   <li class="propClone display-inline margin-ten-right"><a class="inner-link tz-text" href="#team-section1">MEDICAL TEAM</a></li>-->
+                           <li class="propClone display-inline margin-ten-right"><a class="inner-link tz-text" href="#blog-section3">АКТУАЛЬНЫЕ НОВОСТИ</a></li>
+                            <li class="propClone display-inline"><a class="inner-link tz-text" href="#contact-section13">СВЯЗАТЬСЯ С НАМИ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-four-bottom">
+                        <div class="social social-icon-color title-small">
+                            <a href="#" class="margin-eight-right">
+                                <i class="fa fa-facebook tz-icon-color"></i>
+                            </a>
+                            <a href="#" class="margin-eight-right">
+                                <i class="fa fa-twitter tz-icon-color"></i>
+                            </a>
+                            <a href="#" class="margin-eight-right">
+                                <i class="fa fa-google-plus tz-icon-color"></i>
+                            </a>
+                            <a href="#" class="margin-eight-right">
+                                <i class="fa fa-pinterest tz-icon-color"></i>
+                            </a>
+                            <a href="#" class="margin-eight-right">
+                                <i class="fa fa-linkedin tz-icon-color"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-youtube tz-icon-color"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <p class="tz-text no-margin-bottom">&COPY; 2016 LeadGen is proudly powered by <a class="text-light-gray2" href="http://www.themezaa.com/">ThemeZaa.</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write("<script src={% static 'pharma/js/vendor/jquery.min.js'  %}><\/script>")</script>
-    <script src="{% static 'pharma/js/bootstrap.min.js'%}"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="{% static 'pharma/js/vendor/holder.min.js'%}"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{% static 'pharma/js/ie10-viewport-bug-workaround.js'%}"></script>
-    <script src="{% static 'pharma/js/multiLang.js'%}"></script>
- 
-  </body>
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.min.js'%}"></script>
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.appear.js'%}"></script>
+        <script type="text/javascript" src="{% static 'pharma/js/smooth-scroll.js'%}"></script>
+        <script type="text/javascript" src="{% static 'pharma/js/bootstrap.min.js'%}"></script>
+        <!-- wow animation -->
+        <script type="text/javascript" src="{% static 'pharma/js/wow.min.js'%}"></script>
+        <!-- owl carousel -->
+        <script type="text/javascript" src="{% static 'pharma/js/owl.carousel.min.js'%}"></script>        
+        <!-- images loaded -->
+        <script type="text/javascript" src="{% static 'pharma/js/imagesloaded.pkgd.min.js'%}"></script>
+        <!-- isotope -->
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.isotope.min.js'%}"></script> 
+        <!-- magnific popup -->
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.magnific-popup.min.js'%}"></script>
+        <!-- navigation -->
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.nav.js'%}"></script>
+        <!-- equalize -->
+        <script type="text/javascript" src="{% static 'pharma/js/equalize.min.js'%}"></script>
+        <!-- fit videos -->
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.fitvids.js'%}"></script>
+        <!-- number counter -->
+        <script type="text/javascript" src="{% static 'pharma/js/jquery.countTo.js'%}"></script>
+        <!-- time counter  -->
+        <script type="text/javascript" src="{% static 'pharma/js/counter.js'%}"></script>
+        <!-- twitter Fetcher  -->
+        <script type="text/javascript" src="{% static 'pharma/js/twitterFetcher_min.js'%}"></script>
+        <!-- main -->
+        <script type="text/javascript" src="{% static 'pharma/js/main.js'%}"></script>
+    </body>
 </html>
